@@ -19,24 +19,26 @@ let spanMascotaJugador=document.getElementById("hols")
     spanMascotaJugador.innerHTML = "ratiueya"
    }else {
     alert("selecciona una mascota")
-   } 
+} 
 
-   }
-    function seleccionarMascotaEnemigo ()  {
+}
+function seleccionarMascotaEnemigo ()  {
+    let aleatorio = aleatorio (1.3) 
+    let spanEnemigo=document.getElementById("mascota_enemigo")
 
-
-
-      }
+    if (aleatorio == 1 ){
+       spanEnemigo.innerHTML= "HIPODOGE"
+    }else if (aleatorio == 2) {
+        spanEnemigo.innerHTML= "CAPIPEPO"
+    }else  {
+       spanEnemigo.innerHTML=  "RATIUEYA"
+    }
+        
     
-        
-      
-        
+}
+
    function aleatorio(min,max)   {
         return Math.floor(Math.random()*(max - min + 1) + min )
-      
-
-          }
-        
-        
+      }
 
 window.addEventListener("load",inisiarjuego)
