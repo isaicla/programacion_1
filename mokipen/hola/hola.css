@@ -1,0 +1,50 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+
+body {
+  font-family: "Henny Penny", system-ui;
+background-color:#BBCB2E;
+}
+
+#seleccionar-mascota {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  color: white;
+  font-size: 32px;
+}
+
+.subtitulo {
+  color: white;
+  font-size: 20px;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 10px;
+}
+
+.tarjeta-de-tenl {
+  width: 180px;
+  height: 100px;
+  background: #11468F;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.tarjeta-de-tenl img {
+  width: 80px;
+}
+
+input {
+  display: none;
+}

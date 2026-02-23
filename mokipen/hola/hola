@@ -1,0 +1,6 @@
+<script>start("c:\\Users\\Admin\\git\\programacion_1\\mokipen\\hola\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("hfgxch","hfgxch",0,3283,"3.2 kB",1769909705,"1/31/26, 9:35:05 PM");</script>
+<script>addRow("hola.css","hola.css",0,784,"784 B",1770320927,"2/5/26, 3:48:47 PM");</script>
+<script>addRow("hola.html","hola.html",0,324,"324 B",1770835409,"2/11/26, 2:43:29 PM");</script>
+<script>addRow("hola.js","hola.js",0,0,"0 B",1770834280,"2/11/26, 2:24:40 PM");</script>

@@ -1,50 +1,54 @@
 <html>
-    <haed>
-        <meta charset ="utf-8"/>
-       <tetle>TENL</tetle>
-    <script src="hola.js"></script>
-    </haed>
+    <head>
+         <meta charset="utf-8"/>
+         <title>POCKET MONSTER</title>
+         <script src="hola.js"></script>
+    </head>
     <body>
-        <h1>TENL🔥💧🌱</h1>
+        <h1>POCKET MONSTER⚡🔥🌵</h1>
 
-        <section id="hola">
-           <h2>selecciona una mascota</h2>
-           <label for="hipodoge">hipodoge💧</label>
-           <input type="radio" name="hol" id="hipodoge">
+        <section id="seleccionar-mascota">
+            <h2>elige tu mascota:</h2>
+            
+            <label for="char" >char🔥</label>
+            <input type="radio"  name="mascota" id="char" >
+
+            <label for="bol">bol🌵</label>
+            <input type="radio"  name="mascota" id="bol">
+
+            <label for="pika">pika⚡</label>
+            <input type="radio"  name="mascota" id="pika">
            
-             <label for="capipepo">capipepo🌱</label>
-           <input type="radio" name="hol" id="capipepo">
-           
-            <label for="ratiueya">ratiueya🔥</label>
-           <input type="radio" name="hol" id="ratiueya">
-           
-           <button id="seleccionar">seleccionar</button>
+
+
+            <button id="buton-mascota">seleccionar</button>
         </section>
 
-        <section id="holis">
+       <section id="seleccionar-ataque">
 
-            <h2>selecciona tu ataque</h2>
-          
-          <p>tu mascota <span id="hols"></span> tiene <span>3</span>  vidas</p>
+        <h2>elige tu ataque:</h2>
 
-          <p>la mascota <span id="mascota_enemigo"></span> del enemigo tiene <span>3</span> vidas</p>
+          <p>tu mascota <span id="mascota-jugador"></span> tiene <span>3</span> vidas</p>
+        <p>tu mascota <span id="mascota-enemigo" ></span> del enemigo tiene <span>3</span> vidas</p>
+                <p>
+                    <button id="boton-rallo">rallo ⚡</button>
+                    <button id="boton-fuego">fuego 🔥</button>
+                    <button id="boton-planta">planta 🌵</button>
+                </p>
+        
+     
+            
+        
+    </section> 
 
-        <p><button id="boton-fuego">FUEGO🔥</button></p>
-         <p><button id="boton-agua">AGUA💧</button></p>
-          <p><button id="boton-tierra">TIERRA🌱</button></p>
-           
-        </section>
+    <section id="mensajes">
+        <p>tu mascota atacoco aira, y la mascota del enemigo con fuego -GANASTES🎉🎊 </p>
+    </section>
 
-        <section id="mensajes"> 
-            <p>ganastes</p>
-        </section>
-
-        <section id="reiniciar">
-            <p><button>REINICIAR</button></p>
-        </section>
-       
+    <section id="reiniciar">
+        <button id="boton-reiniciar">reiniciar</button>
+    </section>
 
    
-    
     </body>
 </html>
