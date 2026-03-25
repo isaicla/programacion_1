@@ -3,52 +3,61 @@
          <meta charset="utf-8"/>
          <title>POCKET MONSTER</title>
          <script src="hola.js"></script>
+         <link rel="stylesheet" href="hola.css">
     </head>
-    <body>
-        <h1>POCKET MONSTER⚡🔥🌵</h1>
+    <body >
+        
 
         <section id="seleccionar-mascota">
-            <h2>elige tu mascota:</h2>
-            
-            <label for="char" >char🔥</label>
-            <input type="radio"  name="mascota" id="char" >
+         <h1 class="titulo">pocket monster ⚡🔥🌵</h1> 
 
-            <label for="bol">bol🌵</label>
-            <input type="radio"  name="mascota" id="bol">
+            <h2  class="suptitulo">elige tu mascota:</h2>
 
-            <label for="pika">pika⚡</label>
-            <input type="radio"  name="mascota" id="pika">
-           
+            <div class="tarjetas">
+                 <label class="tarjeta-de-POCKET-MONSTER" for="luffy" >
+                  <p>Luffy</p>
+                   <img src="./holafotos/luffy.jpg" alt="Luffy">
+                 </label>
+            <input type="radio"  name="mascota" id="luffy" >
 
+            <label class="tarjeta-de-POCKET-MONSTER" for="zoro"> 
+              <p>Zoro</p>
+                   <img src="./holafotos/zoro.jpg" alt="Zoro">
+                  </label>
+            <input type="radio"  name="mascota" id="zoro">
 
-            <button id="buton-mascota">seleccionar</button>
+              <label class="tarjeta-de-POCKET-MONSTER" for="sanji">
+                  <p>Sanji</p>
+                   <img src="./holafotos/sanji.jpg" alt="Sanji">
+            <input type="radio"  name="mascota" id="sanji">
+               <button id="buton-mascota" class="seleccionar_mascota">seleccionar</button>
+             </div>
+          
         </section>
 
-       <section id="seleccionar-ataque">
+         <section id="seleccionar-ataque">
+         <h1   class="titulo">POCKET MONSTER⚡🔥🌵</h1>
+              <h2  class="suptitulo">elige tu ataque:</h2>
 
-        <h2>elige tu ataque:</h2>
+                <div>
+                    <button id="boton-rallo" class="boton-de-ataque">rallo ⚡</button>
+                    <button id="boton-fuego" class="boton-de-ataque">fuego 🔥</button>
+                    <button id="boton-planta" class="boton-de-ataque">planta 🌵</button>
+                </div>
 
-          <p>tu mascota <span id="mascota-jugador"></span> tiene <span>3</span> vidas</p>
-        <p>tu mascota <span id="mascota-enemigo" ></span> del enemigo tiene <span>3</span> vidas</p>
-                <p>
-                    <button id="boton-rallo">rallo ⚡</button>
-                    <button id="boton-fuego">fuego 🔥</button>
-                    <button id="boton-planta">planta 🌵</button>
-                </p>
-        
-     
-            
-        
+                <div>
+         <section id="mensajes">                   
+        </section>
+        <section id="mensajes">
+        </section>
+        <section id="reiniciar">
+         <button id="boton-reiniciar">reiniciar</button>   
+        </section>
+                </div>
+                <div>
+                  <p>tu mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span> vidas</p>
+                  <p>la mascota de la computadora <span id="mascota-computadora"></span> tiene <span id="vidas-computadora">3</span> vidas</p>
+      </div>        
     </section> 
-
-    <section id="mensajes">
-        <p>tu mascota atacoco aira, y la mascota del enemigo con fuego -GANASTES🎉🎊 </p>
-    </section>
-
-    <section id="reiniciar">
-        <button id="boton-reiniciar">reiniciar</button>
-    </section>
-
-   
     </body>
 </html>

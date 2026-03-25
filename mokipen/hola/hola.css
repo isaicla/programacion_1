@@ -1,50 +1,84 @@
-
-<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-
-body {
-  font-family: "Henny Penny", system-ui;
-background-color:#BBCB2E;
+body{
+   background-image: url("holafotos/fondo.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
-#seleccionar-mascota {
+#seleccionar-mascota{
+   display: flex; 
+   flex-direction: column;
+   align-items: center;
+}
+
+
+.titulo{
+   color: #1bf507;
+ 
+   margin-top: 130px;
+}
+
+.suptitulo{
+color:#1bf507 ;
+margin-top: 5px;
+}
+
+
+.tarjeats {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 100px; 
 }
 
-.titulo {
-  color: white;
-  font-size: 32px;
-}
 
-.subtitulo {
-  color: white;
-  font-size: 20px;
-}
-
-.tarjetas {
-  display: flex;
-  gap: 10px;
-}
-
-.tarjeta-de-tenl {
-  width: 180px;
-  height: 100px;
-  background: #11468F;
-  padding: 10px;
+.tarjeta-de-POCKET-MONSTER {
+  width: 163px;
+  height: 112px;
+  background: transparent;
+  padding: 25px;
   box-sizing: border-box;
+  margin: 15px;  
   border-radius: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
+  align-items: center; 
+  color:#1bf507;
+  display: flex;
+  flex-wrap: wrap;
+ 
 }
 
-.tarjeta-de-tenl img {
-  width: 80px;
+.tarjeta-de-POCKET-MONSTER img{
+   width: 78px;
+  
+}
+.seleccionar_mascota{
+    width: 180px;
+    height: 24px;
+    border-radius: 30px;
+    background: #1bf507;
+    border: 1px solid ;
+    margin-top: 10px;
+    margin-bottom:  10px;
 }
 
-input {
-  display: none;
+
+input{
+   display: none;
 }
+
+#seleccionar-ataque{ 
+   flex-direction: column;
+   align-items: center;
+}
+
+.boton-de-ataque{
+    width: 180px;
+    height: 24px;
+    border-radius: 30px;
+    background: #1bf507;
+    border: 1px solid ;
+    margin-top: 10px;
+    margin-bottom:  10px;
+}
+
+
