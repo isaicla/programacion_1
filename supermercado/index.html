@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermarket La Bendición de Dios</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .empty-message {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🛒 Supermarket La Bendición de Dios</h1>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <div class="cart">
+                <span>🛒 Carrito (<span id="cart-count">0</span>)</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h2>¡Los mejores productos frescos!</h2>
+            <p>Calidad y precio garantizado para tu hogar</p>
+            <a href="#productos" class="btn">Ver Productos</a>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorías</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-icon">🥩</div>
+                    <h3>Carnes</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥬</div>
+                    <h3>Verduras</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍞</div>
+                    <h3>Panadería</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🥛</div>
+                    <h3>Lácteos</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🧴</div>
+                    <h3>Higiene</h3>
+                </div>
+                <div class="category-card">
+                    <div class="category-icon">🍪</div>
+                    <h3>Despensa</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products" id="productos">
+        <div class="container">
+            <h2 class="section-title">Productos</h2>
+            <div class="product-grid" id="product-list">
+            </div>
+        </div>
+    </section>
+
+    <section class="add-product-form">
+        <div class="container">
+            <h2 class="section-title">➕ Agregar Producto Personalizado</h2>
+            <div class="form-container">
+                <form id="custom-product-form">
+                    <input type="text" id="new-product-name" placeholder="Nombre del producto" required>
+                    <input type="number" id="new-product-price" placeholder="Precio ($)" step="0.01" min="0" required>
+                    <input type="text" id="new-product-category" placeholder="Categoría" required>
+                    <button type="submit" class="btn-submit">Agregar Producto</button>
+                </form>
+                <div id="custom-products-list"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers" id="ofertas">
+        <div class="container">
+            <h2 class="section-title">🔥 Ofertas Especiales</h2>
+            <div class="offer-grid">
+                <div class="offer-card">
+                    <span class="discount">-30%</span>
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200/1b5e20/white?text=Pack+Carne" alt="Pack Carne">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pack Carne Premium</h3>
+                        <p class="old-price">$25.99</p>
+                        <p class="price">$18.19</p>
+                        <button class="btn-add" onclick="addToCart('Pack Carne Premium', 18.19)">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <span class="discount">-25%</span>
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200/1b5e20/white?text=Pack+Leche" alt="Pack Leche">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pack Leche 6 unidades</h3>
+                        <p class="old-price">$12.00</p>
+                        <p class="price">$9.00</p>
+                        <button class="btn-add" onclick="addToCart('Pack Leche 6 unidades', 9.00)">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <span class="discount">-20%</span>
+                    <div class="product-image">
+                        <img src="https://placehold.co/200x200/1b5e20/white?text=Pack+Pan" alt="Pack Pan">
+                    </div>
+                    <div class="product-info">
+                        <h3>Pack Panadería</h3>
+                        <p class="old-price">$10.00</p>
+                        <p class="price">$8.00</p>
+                        <button class="btn-add" onclick="addToCart('Pack Panadería', 8.00)">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2 class="section-title">📍 Contacto</h2>
+            <div class="contact-info">
+                <p><strong>Dirección:</strong> Tu calle 123, Ciudad</p>
+                <p><strong>Teléfono:</strong> (123) 456-7890</p>
+                <p><strong>Horario:</strong> Lun-Sáb: 7:00 AM - 9:00 PM</p>
+                <p><strong>Email:</strong> info@supermarketlabendiciondedios.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Supermarket La Bendición de Dios. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart" onclick="toggleCart()">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+            </div>
+            <button class="btn-checkout" onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body {
+    background-image: url("holafotos/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#seleccionar-mascota, #seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#seleccionar-ataque {
+    display: none;
+}
+
+.titulo {
+    color: #1bf507;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px #000;
+    margin-top: 30px;
+}
+
+.suptitulo {
+    color: #1bf507;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px #000;
+    margin-bottom: 30px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tarjeta-de-pokemon {
+    width: 150px;
+    padding: 15px;
+    border: 2px solid #1bf507;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    color: #fff;
+}
+
+.tarjeta-de-pokemon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #1bf507;
+}
+
+.tarjeta-de-pokemon img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta-de-pokemon input {
+    display: none;
+}
+
+.seleccionar-mascota {
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    background: #1bf507;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.seleccionar-mascota:hover {
+    background: #14c204;
+}
+
+.botones-ataque {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.boton-de-ataque {
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    background: #1bf507;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.boton-de-ataque:hover {
+    transform: scale(1.05);
+    background: #14c204;
+}
+
+#mensajes {
+    min-height: 50px;
+    margin: 20px 0;
+}
+
+#mensajes p {
+    color: #fff;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.info-vidas {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.info-vidas span {
+    color: #1bf507;
+    font-weight: bold;
+}
+
+#reiniciar {
+    display: none;
+    margin-top: 20px;
+}
+
+#boton-reiniciar {
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    background: #ff4444;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#boton-reiniciar:hover {
+    background: #cc0000;
+}

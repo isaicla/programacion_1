@@ -1,8 +1,5 @@
 body{
-   background-image: url("holafotos/fondo.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   background: #b70fff;
 }
 
 #seleccionar-mascota{
@@ -15,7 +12,7 @@ body{
 .titulo{
    color: #1bf507;
  
-   margin-top: 130px;
+   margin-top: 64px;
 }
 
 .suptitulo{
@@ -34,7 +31,6 @@ margin-top: 5px;
   width: 163px;
   height: 112px;
   background: transparent;
-  padding: 25px;
   box-sizing: border-box;
   margin: 15px;  
   border-radius: 20px;
@@ -58,7 +54,7 @@ margin-top: 5px;
     background: #1bf507;
     border: 1px solid ;
     margin-top: 10px;
-    margin-bottom:  10px;
+    margin-bottom:-73px;
 }
 
 
